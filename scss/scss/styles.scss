@@ -1,0 +1,88 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font-family: "Pacifico", cursive;
+  color: $text-dark;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.349), rgba(245, 239, 232, 0.767));
+  
+  &::before {
+    content: ""; position: fixed; inset: 0; z-index: -1;
+    background-image: url('../imagenes-perfumes/fondo-tulipanes.jpg');
+    background-size: cover; opacity: 0.85;
+  }
+}
+
+section {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 2rem; border-radius: 14px;
+  margin: 1.5rem auto; max-width: 1100px;
+  box-shadow: $shadow-main;
+  @include entrada-suave; 
+}
+
+.btn {
+  background-color: $accent; color: white;
+  border-radius: 12px; padding: .8rem 1.2rem;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card.item {
+  background: rgba(250, 248, 247, 0.8);
+  border: none; transition: 0.3s;
+  &:hover { transform: translateY(-10px); }
+}
+
+.zoom-modal {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.85); z-index: 9999;
+  @include entrada-suave;
+  img { max-width: 80%; border-radius: 15px; margin-top: 5%; }
+}
+
+@import 'variables';
+@import 'mixins';
+
+
+.banner-oferta {
+  background: linear-gradient(rgba(141, 119, 94, 0.2), rgba(141, 119, 94, 0.2)), 
+              url('../imagenes-perfumes/fondo-tulipanes.jpg'); 
+  background-size: cover;
+  background-position: center;
+  border: 2px solid $accent;
+  color: $text-dark;
+  
+  h2 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+    @include entrada-suave(0.2s);
+  }
+}
+
+.fw-bold {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.nav-link[href="ofertas.html"] {
+  color: #d9534f !important; 
+  font-weight: bold;
+  
+  &:hover {
+    transform: scale(1.1);
+    color: $accent !important;
+  }
+}

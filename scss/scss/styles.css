@@ -1,0 +1,117 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: "Pacifico", cursive;
+  color: #554838;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.349), rgba(245, 239, 232, 0.767));
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../imagenes-perfumes/fondo-tulipanes.jpg");
+  background-size: cover;
+  opacity: 0.85;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: 14px;
+  margin: 1.5rem auto;
+  max-width: 1100px;
+  box-shadow: 0 8px 30px rgba(17, 17, 17, 0.534);
+  animation: fadeInUp 0.8s ease-out 0s both;
+}
+
+.btn {
+  background-color: #8d775e;
+  color: white;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card.item {
+  background: rgba(250, 248, 247, 0.8);
+  border: none;
+  transition: 0.3s;
+}
+.card.item:hover {
+  transform: translateY(-10px);
+}
+
+.zoom-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  animation: fadeInUp 0.8s ease-out 0s both;
+}
+.zoom-modal img {
+  max-width: 80%;
+  border-radius: 15px;
+  margin-top: 5%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.banner-oferta {
+  background: linear-gradient(rgba(141, 119, 94, 0.2), rgba(141, 119, 94, 0.2)), url("../imagenes-perfumes/fondo-tulipanes.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #8d775e;
+  color: #554838;
+}
+.banner-oferta h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.fw-bold {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+.fw-bold:hover {
+  transform: scale(1.1);
+}
+
+.nav-link[href="ofertas.html"] {
+  color: #d9534f !important;
+  font-weight: bold;
+}
+.nav-link[href="ofertas.html"]:hover {
+  transform: scale(1.1);
+  color: #8d775e !important;
+}/*# sourceMappingURL=styles.css.map */

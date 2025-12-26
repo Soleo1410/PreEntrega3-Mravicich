@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soro Essence - Inicio</title>
+  <link rel="icon" href="../imagenes-perfumes/perfume_ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">Soro Essence</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto">
+            <li><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="productos.html">Productos</a></li>
+            <li><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <a href="#" class="cart-icon" aria-label="Ir al carrito de compras">
+        <img src="../imagenes-perfumes/carrito-de-compras.webp" alt="Ícono de carrito" class="cart-img">
+    </a>
+  </header>
+
+  <main>
+    <section class="hero text-center">
+      <h2>Mini perfumes importados</h2>
+      <p>Elegancia, aroma y distinción en frascos de bolsillo.</p>
+      <a class="btn" href="productos.html" style="background-color: #8d775e; color: white; border-radius: 12px; padding: .8rem 1.2rem; text-decoration: none; display: inline-block;">Ver productos</a>
+    </section>
+
+    <section class="galeria-3 d-flex justify-content-center flex-wrap gap-3" aria-label="Galería de mini perfumes">
+      <article><figure><img src="../imagenes-perfumes/mini.perfumes1.jpg" class="zoom-img rounded shadow" alt="Mini perfumes colección 1" width="280"></figure></article>
+      <article><figure><img src="../imagenes-perfumes/mini-perfumes.jpg" class="zoom-img rounded shadow" alt="Mini perfumes colección 3" width="280"></figure></article>
+      <article><figure><img src="../imagenes-perfumes/perfumes-mini.jpg" class="zoom-img rounded shadow" alt="Mini perfumes colección 2" width="280"></figure></article>
+    </section>
+
+    <section class="redes-sociales text-center" aria-label="Redes sociales">
+        <h3>Seguinos en nuestras redes</h3>
+        <div class="socials d-flex justify-content-center gap-3 mt-3">
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <img src="../logo-redes/instagram-svgrepo-com.svg" class="icon-red" alt="Instagram" width="40">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <img src="../logo-redes/facebook-svgrepo-com.svg" class="icon-red" alt="Facebook" width="40">
+          </a>
+          <a href="https://wa.me/5493410000000" target="_blank" aria-label="WhatsApp">
+            <img src="../logo-redes/whatsapp-svgrepo-com.svg" class="icon-red" alt="WhatsApp" width="40">
+          </a>
+        </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-4">
+    <p>© 2025 Soro Essence — Villa Constitución, Santa Fe, Argentina</p>
+  </footer>
+
+  <script src="../js/bootstrap.bundle.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const zoomImages = document.querySelectorAll('.zoom-img');
+    });
+  </script>
+</body>
+</html>
