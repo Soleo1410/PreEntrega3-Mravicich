@@ -18,7 +18,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../imagenes-perfumes/fondo-tulipanes.jpg");
+  background-image: url("./imagenes-perfumes/fondo-tulipanes.jpg");
   background-size: cover;
   opacity: 0.85;
 }
@@ -115,3 +115,4 @@ section {
   transform: scale(1.1);
   color: #8d775e !important;
 }/*# sourceMappingURL=styles.css.map */
+
